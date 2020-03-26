@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head>
+    <link href="terning.css" rel="stylesheet" type="text/css">
+    <script src ="rull_terning.js"></script>
+    <link href="../../minstil.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"><!--[if (gt IE 8) | (IEMobile)]><!-->
+    <link href="/assets/styles/7f865a9f8436/responsive.css" rel="stylesheet"><!--<![endif]--><!--[if (lte IE 8) & (!IEMobile)]><link href="/assets/styles/efc9fe778c38/unresponsive.css" rel="stylesheet"><![endif]-->
+    <link href="/assets/9b1a0dc11869/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/assets/9b1a0dc11869/favicon.ico" rel="shortcut icon" type="image/ico">
+    <link href="/assets/9b1a0dc11869/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/9b1a0dc11869/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <title>NTNU_KURS_2019/20120</title>
+
+</head>
+<body>
+
+  <main>
+
+
+<!-- Menyboksen min -->
+<div class="meny_topp">
+    <button type="button" class="button button-grey"><a href="../../Index.html">Hjem</a></button>
+    <button type="button" class="button button-grey"><a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube video</a></button>
+    <button type="button" class="button button-grey"><a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a></button>
+    <button type="button" class="button button-grey"><a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a></button>
+    <button type="button" class="button button-grey"><a href="https://www.w3schools.com/sql/default.asp"target="_blank">SQL</a></button>
+    <button type="button" class="btn btn-defult"><a href="https://www.w3schools.com/php/default.asp"target="_blank">PHP</a></button>
+    <button type="button" class="button button-grey"><a href="https://www.w3schools.com/python/default.asp" target="_blank">Python</a></button>
+    <button type="button" class="button button-grey"><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></button>
+    
+      <!-- ClasseDIV med overskrift -->   
+    </div>
+    
+      <div class="header">
+      <h1>Vår spillportal - 3D terninger</h1>
+      
+      
+      </div>
+    
+    <!-- Her er mine grids -->
+    
+    <div class="meny_venstre">
+    
+      <ol>
+    
+    <li>Om oss</li>
+    
+          <ul>
+          <li><a href="../omoss.html">Hvem er vi</a></li>
+          <li><a href="../Laereplan.html">Læreplan</a></li>
+          </ul>
+          
+          <li>Digitale Escape room</li>
+          
+          <ul>
+          <li><a href="https://escaperoomthegame.com/en-au/"target="_blank">The game </a></li>
+          <li><a href="https://sites.google.com/site/digitalbreakouttemplate/home"target="_blank">Google forms escape </a></li>
+          <li><a href=" https://escaperoomthegame.com/en-us/escape-room-the-game-virtual-reality/behind-enemy-lines/walkthrough"target="_blank">Behind enemy lines </a></li>     
+          </ul>
+    
+          <li>Blokkprogrammering</li>
+          <ul>
+          <li><a href="https://makecode.microbit.org"target="_blank">Microbit</a></li>
+          <li><a href="https://scratch.mit.edu"target="_blank">Scratch</a></li>
+          </ul>
+         
+          <li>Våre digitale "spill"</li>
+          <ul>
+            <li><a href="../Res_tabell.html">Digitale terninger</a></li>
+            <li><a href="Terning.html">3D terninger</a></li>
+            </ul>
+            <li>Utfordringer og tanker videre</li>
+            <ul>
+              <li><a href="../Tanker_videre.html">Tanker videre</a></li>
+              </ul>
+        </ol>
+        </div>
+ 
+
+
+        <div class="hovedvindu">
+  
+  <p>Ikke helt ferdig. </p>
+  <p>Målet er å få disse terningene til å fungere på samme måte som digitale terninger:</p>
+  
+  
+
+  <div class="example persp persp-orig">
+    <div class="example-label" id="rolling-class"></div>
+    <div class="dice" id="rolling-dice">
+      <div class="cube w-transition facing-1" onclick="rollDice(this)">
+        <div class="face face-1">1</div>
+        <div class="face face-2">2</div>
+        <div class="face face-3">3</div>
+        <div class="face face-4">4</div>
+        <div class="face face-5">5</div>
+        <div class="face face-6">6</div>
+      </div>
+    </div>
+  </div>
+    
+
+
+  <div class="example persp persp-orig">
+    <div class="example-label" id="rolling-class"></div>
+    <div class="dice" id="rolling-dice">
+      <div class="cube w-transition facing-1" onclick="rollDice2(this)">
+        <div class="face face-1">1</div>
+        <div class="face face-2">2</div>
+        <div class="face face-3">3</div>
+        <div class="face face-4">4</div>
+        <div class="face face-5">5</div>
+        <div class="face face-6">6</div>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="kastMedTerning()">Kast med terning</button> 
+        <button onclick="slett()">Slett tabell</button> 
+
+  </div>
+ <!-- ClasseDIV med fot"noter" -->  
+ <div class="footer">
+
+    <p>Copyright &copy; 2020 Bent, Karin og Frode - Sist oppdatert
+    <script>
+      document.write(Date());
+      </script>
+    </div>
+    </div>
+  </main>
+    <!-- Slutt på body og HTML -->
+    </body>
+    </html>
