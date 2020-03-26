@@ -1,0 +1,231 @@
+/* CSS Document */
+
+/* sørger for at vi kan bruke æ. ø og å */
+@charset "UTF-8";
+
+
+/* For mobile phones: */
+[class*="main"] {
+	width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+	/* For tablets: */
+	main {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+	/* For desktop: */
+	main {width: 100%;}
+  }
+/* Definerer body taggen*/
+body{
+	
+	font-family: "Lucida Sans", sans-serif;
+	background-image: url(Filer/loopingbackground.png);
+}
+/* Definerer img taggen*/
+.img {
+	margin: 5px;
+}
+#nedtelling{
+	text-align: center;
+	color:white;
+	margin-top:-20px;
+	
+}
+/* prøver å følge universell utforming av linkesymbol, men denne virker ikke. Vet ikke hva jeg skal ha forran koden
+a :link{
+ 
+	 \1F517; 
+}
+*/
+/* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
+main {
+	display: grid; /* Definerer at sidene skal vises med grids*/
+	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
+	grid-row-gap: 5px; /* mellomrom mellom gridsene vertikaltt*/
+	text-align: center; /* all teks skal midtstilles som standard*/
+	grid-template-rows: 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - vertikalt */
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - horisontalt */
+}
+
+/* Definerer header taggen/griden*/
+.header {
+	grid-column: 1/6;
+	background-color: #33b5e5;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+/* Definerer h1 taggen = animasjon*/
+h1 {
+	position: relative;
+	animation-timing-function: linear;
+	animation: mymove 7s infinite;
+	animation-direction: alternate-reverse;
+}
+
+/* Definerer bevegelse i animasjonen (denne brukes i h1 taggen*/
+  @keyframes mymove {
+	from {right: 0px;}
+	to {right: 200px;}
+  }
+
+/* Definerer meny_topp taggen/griden*/
+.meny_topp{
+	grid-column: 1/6;
+	grid-row: 1/6;
+	text-align: left;
+}
+
+
+/* Definerer meny_venstre taggen/griden*/
+.meny_venstre{
+	grid-column: 1/2;
+	font-size: 14px;
+	text-align: left;
+	text-indent: 20px;
+	font-weight: bold;
+}
+
+/* Definerer hovedvindu taggen/griden*/
+.hovedvindu{
+	grid-column: 2/6;
+	grid-row: auto;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	color:black;
+	text-align: left;
+	background-image: url(Filer/Bie.png);
+	background-repeat:repeat;
+	background-color: black;
+}
+
+/* Definerer footer taggen/griden*/
+.footer {
+	grid-column: 1/6;
+	text-align: center;
+	word-spacing: 10px;
+	background-color: #33b5e5;
+	color: #000000;
+	margin-bottom: 1px;
+
+}
+
+  /* Definerer liste taggen*/
+  li {
+	list-style-position: inside;
+	padding: 5px;
+	margin-bottom: 7px;
+	background-color: #33b5e5;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+/* Definerer nummerert/ordnet liste taggen*/
+  ol {
+	list-style-position: inside;
+	padding: 5px;
+	margin-bottom: 7px;
+	background-color: #33b5e5;
+	color: #ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+
+/* Definerer unummerert/uordnet liste taggen*/
+ul {
+	list-style-position: inside;
+	padding: 5px;
+	margin-bottom: 7px;
+	background-color: #33b5e5;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  a{
+	  background-color: white;
+	  text-decoration: underline;
+  }
+/* Definerer hvordan fagen foandrer seg for en peker i liste taggen*/
+  li:hover {
+	background-color: #0099cc;
+  }
+  .test{
+	font-size: 20px;
+	position: absolute;
+	top: 500px;
+	left:22%;
+  }
+/* Definerer tabell taggen*/
+  TABLE{
+	font-size: 20px;
+	position: absolute;
+	top: 500px;
+	left:35%;
+	
+}
+  .table {
+	text-align: center;
+	background-color: #33b5e5;
+	color: #000000;
+	order: 1px solid #000000; /* svart */
+  }
+
+/* Definerer kolonner i tabell taggen*/
+th {
+    border: 1px solid #000000; /* svart */
+	padding: 5px; /* avstand mellom bokskant og innhold */
+	color: white;
+}
+/* Definerer radene i tabell taggen*/
+td {
+    background-color: #e7f1cc; /* lys grønn */
+    border: 1px solid #000000; /* svart */
+    padding: 5px; /* avstand mellom bokskant og innhold */
+}
+
+#terning1 {
+	align-self: left;
+	font-size: 2em;
+	font-family: Helvetica, Arial, sans-serif, sans;
+	font-weight: 500;
+  }
+
+  #terning2 {
+	align-self: center;
+	font-size: 2em;
+	font-family: Helvetica, Arial, sans-serif, sans;
+	font-weight: 500;
+	
+  }
+  #terning3 {
+	align-self: center;
+	font-size: 2em;
+	font-family: Helvetica, Arial, sans-serif, sans;
+	font-weight: 500;
+  }
+
+  .flexcontainer {
+	display: -webkit-inline-flex;
+	/* Safari */
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: column;
+	border: 3px solid;
+	width: 10vw;
+	height: 10vw;
+	margin: 2px;
+	rotate: 60px;
+  }
+
+  .flexcontainer1 {
+	display: -webkit-inline-flex;
+	/* Safari */
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 10vw;
+	height: 10vw;
+	margin: 2em;
+  }
+
