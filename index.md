@@ -19,7 +19,7 @@
     
      <div class="hovedvindu">
         
-        <h1> <a href="https://handerre.github.io/Index.html">Her finner du startsiden vår </a></h1>
+        <h1> <a href="https://handerre.github.io/Index.html">Her finner du startsiden vår </a>
         
 
 
