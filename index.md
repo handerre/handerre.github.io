@@ -1,6 +1,8 @@
 <!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
-<meta charset="UTF-8">
+<html lang="no">
 <head>
+    <meta name="author" content="#">
+    <meta charset="UTF-8">
 
 <title>Startsiden</title> <!-- Tittel på HTML filen min i nettleservinduet-->
 
