@@ -13,19 +13,15 @@
 
 </head>
 
-<body>
 
-<main>
- 
 
-  
-       
+
     
-    <div class="hovedvindu">
+    
         
         <h1> <a href="https://handerre.github.io/Index.html">Her finner du startsiden vår </a></h1>
         
-    </div>
+
 
     <div class="footer">
         <p>Copyright &copy; 2020 Bent, Karin og Frode - Sist oppdatert
@@ -33,8 +29,4 @@
               document.write(Date());
               </script>
     </div>
-</main>
 
-<!-- Slutt på body og HTML -->
-</body>
-</html>
