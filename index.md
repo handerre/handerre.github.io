@@ -4,8 +4,6 @@
     <meta name="author" content="#">
     <meta charset="UTF-8">
 
-<title>Startsiden</title> <!-- Tittel på HTML filen min i nettleservinduet-->
-
 <!-- Koblingen til .css filen (stilarket) mitt -->
 <link href="minstil.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +15,9 @@
 
 
     
-     <div class="hovedvindu">
+    
         
-        <h1> <a href="https://handerre.github.io/Index.html">Her finner du startsiden vår </a>
+        <h1> <a href="https://handerre.github.io/Index.html">Her finner du ressurser til ITM </a></h1>
         
 
 
