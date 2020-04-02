@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
+<meta charset="UTF-8">
+<head>
+
+<title>Inspirasjon til Escape room</title> <!-- Tittel på HTML filen min i nettleservinduet-->
+
+<!-- Koblingen til .css filen (stilarket) mitt -->
+<link href="../minstil.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+<main>
+    <div class="meny_topp">
+        <button type="button" class="button button-grey"><a href="../Nettside_Prosjektet.html">Startsiden</a></button>
+        <button type="button" class="button button-grey"><a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a></button>
+        <button type="button" class="button button-grey"><a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a></button>
+        <button type="button" class="button button-grey"><a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a></button>
+        <button type="button" class="button button-grey"><a href="https://microbit.org"target="_blank">Microbit</a></button>
+        <button type="button" class="button button-grey"><a href="https://scratch.mit.edu"target="_blank">Scratch</a></button>
+        <button type="button" class="button button-grey"><a href="https://www.w3schools.com/python/default.asp" target="_blank">Python</a></button>
+        <button type="button" class="button button-grey"><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></button>
+        <button type="button" class="button button-grey"><a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a></button>
+    
+        <div id="nedtelling"> 
+        
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jun 19, 2020 15:00:00").getTime();
+                
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+                
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Output the result in an element with id="demo"
+                  document.getElementById("nedtelling").innerHTML = "Antall dager til sommerferien: "+ days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                    
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("nedtelling").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+        </div>
+
+    </div>
+
+    <div class="header">
+        <h1>Inspirasjon til Escaperoom</h1>
+        
+        </div>
+    
+    
+    <div class="meny_venstre">
+        <ol>
+            <li>Oppgaven</li>
+            <ul>
+            <li>&#128279; <a href="Nettside_Oppgave.html">Oppgavebeskrivelse</a></li>
+            </ul>
+            <li>Ressurser</li>
+            <ul>
+            <li>&#128279; <a href="Nettside_Lover.html">Lov og forskrift </a></li>
+            <li>&#128279; <a href="Nettside_Programvare.html">Programvare </a></li>
+          </ul>
+          <li>Inspirasjon</li>
+          <ul>
+          <li>&#128279; <a href="Nettside_Escaperoom.html.html">Escaperoom </a></li> 
+          </ul>
+          </ol>
+        
+    </div>
+       
+    
+    <div class="hovedvindu">
+        <b>Inspirasjonskilder</b>
+        <br>
+        <br>
+        Her finner du noen eksterne kilder for å få inspirasjon til ditt Escape room.
+        <br>
+        Her kan det være noen gode oppgaver for å komme ut av “rom” som allerede er laget for brukeren.
+        <br>
+        <br>
+        &#128279; <a href="www.overthewire.org"target="_blank"> lærer sikkerhetsmekanismer via spill</a>
+        <br>
+        <br>
+        &#128279; <a href="Hackthis.co.uk"target="_blank"> lær å hacke nettsider, alternativ 1</a>
+        <br>
+        <br>
+        &#128279; <a href="hackthissite.org"target="_blank"> lær å hacke nettsider, alternativ 2</a>
+        <br>
+        <br>
+        &#128279; <a href="hackthebox.eu"target="_blank"> lab for å teste sikkerhetsmekanismer</a>
+        <br>
+        <br>
+        &#128279; <a href="www.overthewire.org "target="_blank"> lærer sikkerhetsmekanismer via spill</a>
+       
+
+
+
+       
+    </div>
+ 
+     
+    <div class="footer">
+        <p>Copyright &copy; 2020 Bent, Karin og Frode 
+            <script>
+              document.write(Date());
+              </script>
+    </div>
+</main>
+
+<!-- Slutt på body og HTML -->
+</body>
+</html>
