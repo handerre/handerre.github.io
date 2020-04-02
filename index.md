@@ -17,7 +17,7 @@
     
     
         
-        <h1> <a href="https://handerre.github.io/Index.html">Her finner du ressurser til ITM </a></h1>
+        <h1> <a href="https://handerre.github.io/Nettside_Prosjektet.html">Her finner du oppgaven om nettside </a></h1>
         
 
 
