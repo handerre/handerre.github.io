@@ -26,6 +26,8 @@ body{
 /* Definerer img taggen*/
 .img {
 	margin: 5px;
+	height: 360px;
+	width: 250px;
 }
 #nedtelling{
 	text-align: right;
@@ -82,6 +84,7 @@ h1 {
 	grid-column: 1/6;
 	grid-row: 1/6;
 	text-align: left;
+	
 }
 
 
@@ -150,8 +153,9 @@ ul {
   }
 
   a{
-	  background-color: white;
+	 
 	  text-decoration: underline;
+	  color: #ffffff;
   }
 /* Definerer hvordan fagen foandrer seg for en peker i liste taggen*/
   li:hover {
