@@ -78,7 +78,6 @@ main {
 /* Definerer header taggen/griden*/
 .header {
 	grid-column: 1/6;
-	background-color: #33b5e5;
 	text-align: center;
 	color: #ffffff;
 	margin-top: 10px;
