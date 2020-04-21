@@ -26,6 +26,8 @@ body{
 /* Definerer img taggen*/
 .img {
 	margin: 5px;
+	height: 360px;
+	width: 250px;
 }
 #nedtelling{
 	text-align: right;
@@ -33,12 +35,31 @@ body{
 	margin-top:-20px;
 	
 }
+/* prøver å følge universell utforming av linkesymbol, men denne virker ikke. Vet ikke hva jeg skal ha forran koden
+a :link{
+ 
+	 \1F517; 
+}
+*/
 
+video {
+	width: 300px;
+	height: 200px;
+	
+}
+iframe{
+	min-width: 20px;
+	max-width: 200px;
+	min-height: auto;
+	max-height:100px;
+	margin: 5px;
+
+}
 .button {
 	background-color: #4CAF50;
-	border: none;
-	color:black;
-	padding: 15px 32px;
+	border-style: outset;
+	color: white;
+	padding: 10px 22px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -46,12 +67,6 @@ body{
 	margin: 4px 2px;
 	cursor: pointer;
   }
-/* prøver å følge universell utforming av linkesymbol, men denne virker ikke. Vet ikke hva jeg skal ha forran koden
-a :link{
- 
-	 \1F517; 
-}
-*/
 /* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
 main {
 	display: grid; /* Definerer at sidene skal vises med grids*/
@@ -65,10 +80,10 @@ main {
 /* Definerer header taggen/griden*/
 .header {
 	grid-column: 1/6;
-	background-color: #33b5e5;
 	text-align: center;
 	color: #ffffff;
 	margin-top: 10px;
+	background-color: #33b5e5;
 }
 
 /* Definerer h1 taggen = animasjon*/
@@ -90,6 +105,9 @@ h1 {
 	grid-column: 1/6;
 	grid-row: 1/6;
 	text-align: left;
+	font-size: 14px;
+	
+	
 }
 
 
@@ -106,7 +124,8 @@ h1 {
 .hovedvindu{
 	grid-column: 2/6;
 	/*grid-row: auto;*/
-	height: 500px;
+	
+	min-height: 500px;
 	padding: 15px;
 	margin-top: 15px;
 	margin-bottom: 7px;
@@ -115,6 +134,39 @@ h1 {
 	background-image: url(Filer/Bie.png);
 	background-repeat:repeat;
 	background-color: black;
+	float: inline-start;
+	
+}
+.hovedvindu_filmer{
+	grid-column: 2/4;
+	/*grid-row: auto;*/
+	
+	min-height: 500px;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	color:black;
+	text-align: left;
+	background-image: url(Filer/Bie.png);
+	background-repeat:repeat;
+	background-color: black;
+	float: inline-start;
+	
+}
+.hovedvindu_filmer1{
+	grid-column: 4/6;
+	/*grid-row: auto;*/
+	
+	min-height: 500px;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	color:black;
+	text-align: left;
+	background-image: url(Filer/Bie.png);
+	background-repeat:repeat;
+	background-color: black;
+	float: inline-start;
 	
 }
 
@@ -158,13 +210,17 @@ ul {
   }
 
   a{
-	  background-color: white;
+	 
 	  text-decoration: underline;
+	  color: #ffffff;
   }
-/* Definerer hvordan fagen foandrer seg for en peker i liste taggen*/
-  li:hover {
+  /* Definerer hvordan fagen foandrer seg for en peker */
+  a:hover{
+	color: rgb(51, 3, 51);
 	background-color: #0099cc;
-  }
+ }
+
+
   .test{
 	font-size: 20px;
 	position: absolute;
