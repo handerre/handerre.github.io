@@ -70,8 +70,8 @@ iframe{
 /* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
 main {
 	display: grid; /* Definerer at sidene skal vises med grids*/
-	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
-	grid-row-gap: 5px; /* mellomrom mellom gridsene vertikaltt*/
+	/* grid-column-gap: 15px; mellomrom mellom gridsene horisontalt*/
+	grid-row-gap: 5px;  mellomrom mellom gridsene vertikaltt*/
 	text-align: center; /* all teks skal midtstilles som standard*/
 	grid-template-rows: 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - vertikalt */
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - horisontalt */
@@ -118,6 +118,7 @@ h1 {
 	text-align: left;
 	text-indent: 20px;
 	font-weight: bold;
+	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
 }
 
 /* Definerer hovedvindu taggen/griden*/
@@ -129,11 +130,27 @@ h1 {
 	padding: 15px;
 	margin-top: 15px;
 	margin-bottom: 7px;
+	margin-left: 15px;
 	color:black;
 	text-align: left;
 	background-image: url(Filer/Bie.png);
 	background-repeat:repeat;
 	background-color: black;
+	float: inline-start;
+	
+}
+.hovedvindu_oppgave{
+	grid-column: 2/6;
+	/*grid-row: auto;*/
+	min-height: 500px;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	margin-left: 15px;
+	color: black;
+	text-align: left;
+	background-repeat:repeat;
+	background-image: url(Filer/Bie.png);
 	float: inline-start;
 	
 }
@@ -145,6 +162,7 @@ h1 {
 	padding: 15px;
 	margin-top: 15px;
 	margin-bottom: 7px;
+	margin-left: 15px;
 	color:black;
 	text-align: left;
 	background-image: url(Filer/Bie.png);
