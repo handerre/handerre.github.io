@@ -30,6 +30,7 @@ body{
 	max-width: 250px;
 	
 }
+/*Gjør at bilder får en scrollbar automatisk når vinduet blir lite*/
 .bilde {
 	
 	overflow: auto;
@@ -38,6 +39,7 @@ body{
 	text-align: right;
 	color:white;
 	margin-top:-20px;
+	
 	
 }
 /* prøver å følge universell utforming av linkesymbol, men denne virker ikke. Vet ikke hva jeg skal ha forran koden
@@ -58,7 +60,7 @@ iframe{
 	max-height:100px;
 	margin: 5px;
 }
-
+/*Gjør at filmer får en scrollbar automatisk når vinduet blir lite*/
 .film {
 	
 	overflow: auto;
@@ -114,6 +116,7 @@ h1 {
 	grid-row: 1/6;
 	text-align: left;
 	font-size: 14px;
+	
 	
 	
 }
@@ -280,7 +283,7 @@ td {
     border: 1px solid #000000; /* svart */
     padding: 5px; /* avstand mellom bokskant og innhold */
 }
-
+/*
 #terning1 {
 	align-self: left;
 	font-size: 2em;
@@ -304,7 +307,7 @@ td {
 
   .flexcontainer {
 	display: -webkit-inline-flex;
-	/* Safari */
+
 	display: inline-flex;
 	justify-content: center;
 	flex-direction: column;
@@ -317,7 +320,7 @@ td {
 
   .flexcontainer1 {
 	display: -webkit-inline-flex;
-	/* Safari */
+
 	display: inline-flex;
 	justify-content: center;
 	flex-direction: column;
@@ -325,4 +328,4 @@ td {
 	height: 10vw;
 	margin: 2em;
   }
-
+*/
