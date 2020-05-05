@@ -3,7 +3,6 @@
 /* sørger for at vi kan bruke æ. ø og å */
 @charset "UTF-8";
 
-
 /* For mobile phones: */
 [class*="main"] {
 	width: 100%;
@@ -13,58 +12,55 @@
 	/* For tablets: */
 	main {width: 100%;}
   }
+
   @media only screen and (min-width: 768px) {
 	/* For desktop: */
 	main {width: 100%;}
   }
+
 /* Definerer body taggen*/
 body{
 	
 	font-family: "Lucida Sans", sans-serif;
 	background-image: url(Filer/loopingbackground.png);
 }
+
 /* Definerer img taggen*/
 .img {
 	margin: 5px;
 	max-height: 360px;
 	max-width: 250px;
-	
-}
+	}
+
 /*Gjør at bilder får en scrollbar automatisk når vinduet blir lite*/
-.bilde {
-	
+.bilde {	
 	overflow: auto;
 }
+
 #nedtelling{
 	text-align: right;
 	color:white;
-	margin-top:-20px;
-	
-	
+	margin-top:-20px;	
 }
-/* prøver å følge universell utforming av linkesymbol, men denne virker ikke. Vet ikke hva jeg skal ha forran koden
-a :link{
- 
-	 \1F517; 
-}
-*/
 
 video {
 	width: 300px;
 	height: 200px;
 	
 }
+
 iframe{
 	min-width: 20px;
 	max-width: 200px;
 	max-height:100px;
 	margin: 5px;
 }
+
 /*Gjør at filmer får en scrollbar automatisk når vinduet blir lite*/
 .film {
-	
 	overflow: auto;
 }
+
 .button {
 	background-color: #4CAF50;
 	border-style: outset;
@@ -77,6 +73,7 @@ iframe{
 	margin: 4px 2px;
 	cursor: pointer;
   }
+
 /* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
 main {
 	display: grid; /* Definerer at sidene skal vises med grids*/
@@ -145,8 +142,8 @@ h1 {
 	background-repeat:repeat;
 	background-color: black;
 	float: inline-start;
-	
-}
+	}
+
 .hovedvindu_oppgave{
 	grid-column: 2/6;
 	/*grid-row: auto;*/
@@ -159,13 +156,12 @@ h1 {
 	text-align: left;
 	background-repeat:repeat;
 	background-image: url(Filer/Bie.png);
-	float: inline-start;
-	
+	float: inline-start;	
 }
+
 .hovedvindu_filmer{
 	grid-column: 2/4;
-	/*grid-row: auto;*/
-	
+	/*grid-row: auto;*/	
 	min-height: 500px;
 	padding: 15px;
 	margin-top: 15px;
@@ -177,7 +173,6 @@ h1 {
 	background-repeat:repeat;
 	background-color: black;
 	float: inline-start;
-	
 }
 .hovedvindu_filmer1{
 	grid-column: 4/6;
@@ -193,7 +188,6 @@ h1 {
 	background-repeat:repeat;
 	background-color: black;
 	float: inline-start;
-	
 }
 
 /* Definerer footer taggen/griden*/
@@ -215,6 +209,7 @@ h1 {
 	background-color: #33b5e5;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
+
 /* Definerer nummerert/ordnet liste taggen*/
   ol {
 	list-style-position: inside;
@@ -235,32 +230,27 @@ ul {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
-  a{
+  /* Definerer en peker*/
+a{
 	 
 	  text-decoration: underline;
 	  color: #ffffff;
   }
-  /* Definerer hvordan fagen foandrer seg for en peker */
+
+  /* Definerer hvordan fargen forandrer seg for en peker når man holder musepeker over */
   a:hover{
 	color: rgb(51, 3, 51);
 	background-color: #0099cc;
  }
 
-
-  .test{
-	font-size: 20px;
-	position: absolute;
-	top: 500px;
-	left:22%;
-  }
 /* Definerer tabell taggen*/
   TABLE{
 	font-size: 20px;
 	position: absolute;
 	top: 500px;
 	left:35%;
-	
 }
+
   .table {
 	text-align: center;
 	background-color: #33b5e5;
@@ -280,49 +270,4 @@ td {
     border: 1px solid #000000; /* svart */
     padding: 5px; /* avstand mellom bokskant og innhold */
 }
-/*
-#terning1 {
-	align-self: left;
-	font-size: 2em;
-	font-family: Helvetica, Arial, sans-serif, sans;
-	font-weight: 500;
-  }
 
-  #terning2 {
-	align-self: center;
-	font-size: 2em;
-	font-family: Helvetica, Arial, sans-serif, sans;
-	font-weight: 500;
-	
-  }
-  #terning3 {
-	align-self: center;
-	font-size: 2em;
-	font-family: Helvetica, Arial, sans-serif, sans;
-	font-weight: 500;
-  }
-
-  .flexcontainer {
-	display: -webkit-inline-flex;
-
-	display: inline-flex;
-	justify-content: center;
-	flex-direction: column;
-	border: 3px solid;
-	width: 10vw;
-	height: 10vw;
-	margin: 2px;
-	rotate: 60px;
-  }
-
-  .flexcontainer1 {
-	display: -webkit-inline-flex;
-
-	display: inline-flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 10vw;
-	height: 10vw;
-	margin: 2em;
-  }
-*/
