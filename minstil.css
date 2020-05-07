@@ -144,6 +144,12 @@ h1 {
 	float: inline-start;
 	}
 
+	/* ul til bruk i vindu oppgave*/
+ul1{
+	margin-left: 20px;
+
+}
+
 .hovedvindu_oppgave{
 	grid-column: 2/6;
 	/*grid-row: auto;*/
